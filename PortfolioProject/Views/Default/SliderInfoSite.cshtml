@@ -1,0 +1,19 @@
+﻿@using PortfolioProject.Models.Entity
+@model List<SiteSettings>
+
+@foreach (var item in Model)
+{
+    <div class="socials">
+        <ul>
+            <li><a href="@item.FacebookLink">
+                <img class="svg" src="~/portfolio/html/img/svg/social/facebook.svg" alt="" /></a></li>
+            <li><a href="@item.TwitterLink">
+                <img class="svg" src="~/portfolio/html/img/svg/social/twitter.svg" alt="" /></a></li>
+            <li><a href="@item.InstagramLink">
+                <img class="svg" src="~/portfolio/html/img/svg/social/instagram.svg" alt="" /></a></li>
+        </ul>
+    </div>
+    <div class="hero_mail">
+        <a class="line_anim" href="mailto:@item.Email">@item.Email</a>
+    </div>
+}

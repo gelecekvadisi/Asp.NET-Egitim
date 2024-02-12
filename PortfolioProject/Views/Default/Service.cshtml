@@ -1,0 +1,51 @@
+﻿
+@using PortfolioProject.Models.Entity
+@model List<Service>
+
+<div class="aali_tm_section" id="service">
+    <div class="aali_tm_service">
+        <div class="container">
+            <div class="service_list">
+                <ul>
+                    <li class="simple wow fadeInLeft" data-wow-duration="1s">
+                        <div class="list_inner">
+                            <div class="aali_tm_main_title" data-text-align="left" data-color="dark">
+                                <span>Neler Yapabiliyorum?</span>
+                                <h3>Hizmetlerim</h3>
+                                <p>
+                                    Bu zamana kadar edindiğim tecrübeler ile sizlere
+                                    farklı alanlarda hizmetler verebilirim. Web tasarım,
+                                    mobil uygulama geliştirme, oyun programlama gibi
+                                    alanlarda hizmetler verebilirim.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                    </li>
+
+                    @foreach (var item in Model)
+                    {
+                        <li class="wow fadeInLeft" data-wow-duration="1s">
+                            <div class="list_inner tilt-effect">
+                                <span class="icon">
+                                    <img class="svg" src="~/portfolio/html/img/svg/web.svg" alt="" />
+                                    <img class="back" src="~/portfolio/html/img/svg/service.png" alt="" />
+                                </span>
+                                <div class="title">
+                                    <h4>@item.Title</h4>
+                                </div>
+                                <div class="text">
+                                    <p>@item.Content</p>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <span class="square_left moving_effect" data-direction="y" data-reverse="yes"></span>
+        <span class="square_right moving_effect" data-direction="y" data-reverse="yes"></span>
+    </div>
+</div>

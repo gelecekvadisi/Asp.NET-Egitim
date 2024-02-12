@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "ServiceAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Yeni Hizmet Ekle</h4>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form method="post">
+
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Başlık</label>
+                                <input type="text" name="Title" class="form-control" placeholder="Başlık" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">İçerik</label>
+                                <textarea class="form-control" name="Content" rows="6"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Ekle</button>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- end row-->
+
+            </div> <!-- end card-body -->
+        </div> <!-- end card -->
+    </div><!-- end col -->
+</div>
+

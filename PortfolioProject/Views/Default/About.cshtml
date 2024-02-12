@@ -1,0 +1,37 @@
+﻿@using PortfolioProject.Models.Entity
+@model List<About>
+
+<div class="aali_tm_section" id="about">
+    <div class="aali_tm_about">
+        <div class="about_inner">
+            <div class="left">
+                <div class="image">
+                    <img src="~/portfolio/html/img/thumbs/45-49.jpg" alt="" />
+                    <div class="main" data-img-url="/portfolio/html/img/about/1.jpg"></div>
+                    <span class="square moving_effect" data-direction="y" data-reverse="yes"></span>
+                    <span class="border"><span class="in moving_effect" data-direction="x" data-reverse="yes"></span></span>
+                </div>
+            </div>
+            <div class="center">
+                @foreach (var item in Model)
+                {
+                    <div class="title wow fadeInUp" data-wow-duration="1s">
+                        <span class="small">Hakkımda</span>
+                        <h3>@item.HeadTitle</h3>
+                        <span class="subtitle">@item.BigTitle</span>
+                    </div>
+                    <div class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <p>@item.Content</p>
+                    </div>
+                }
+            </div>
+            <div class="right">
+                <div class="image">
+                    <img src="~/portfolio/html/img/thumbs/41-61.jpg" alt="" />
+                    <div class="main" data-img-url="/portfolio/html/img/about/2.jpg"></div>
+                    <div class="square moving_effect" data-direction="x" data-reverse="no"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

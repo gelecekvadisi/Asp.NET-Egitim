@@ -1,0 +1,31 @@
+﻿
+@using PortfolioProject.Models.Entity
+@model List<WorkingLife>
+
+<li class="wow fadeInRight" data-wow-duration="1s">
+    <h3 class="main_title"><span>Çalışma Hayatım</span></h3>
+    <ul class="list">
+
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="list_inner">
+                    <span class="icon"><img class="svg" src="~/portfolio/html/img/svg/case.svg" alt="" /></span>
+                    <div class="info">
+                        <div class="left">
+                            <h3>@item.Title</h3>
+                            <span>@item.CompanyName</span>
+                        </div>
+                        <div class="right">
+                            <span>@item.WorkingDate</span>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>@item.Content</p>
+                    </div>
+                </div>
+            </li>
+        }
+
+    </ul>
+</li>

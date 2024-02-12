@@ -1,0 +1,37 @@
+﻿
+@using PortfolioProject.Models.Entity
+@model List<Skill>
+
+<div class="aali_tm_section" id="skill">
+    <div class="aali_tm_skills">
+        <div class="container">
+            <div class="skills_inner">
+                <div class="left wow fadeInLeft" data-wow-duration="1s">
+                    <div class="aali_tm_main_title" data-text-align="left" data-color="light">
+                        <span>Yeteneklerim</span>
+                        <h3>Neler Biliyorum?</h3>
+                        <p>
+                            Teknolojiyi çok yakından takip ediyorum. Yapay zeka
+                            alanlarında araştırmalarım devam ediyor. Web site ve 
+                            responsive tasarımları hakkında bilgi sahibiyim.
+                        </p>
+                    </div>
+                </div>
+                <div class="right wow fadeInRight" data-wow-duration="1s">
+                    <div class="dodo_progress">
+
+                        @foreach (var item in Model)
+                        {
+                            <div class="progress_inner" data-value="@item.Percent">
+                                <span><span class="label">@item.Title</span><span class="number">@item.Percent%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="border moving_effect" data-direction="x" data-reverse="yes"></span>
+    </div>
+</div>

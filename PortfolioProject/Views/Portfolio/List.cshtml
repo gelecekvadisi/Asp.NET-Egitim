@@ -1,0 +1,33 @@
+﻿
+@using PortfolioProject.Models.Entity
+@model List<Portfolio>
+
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6 col-xl-2">
+
+            <!-- Simple card -->
+            <div class="card">
+                <img class="card-img-top img-fluid" src="@item.Image" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">@item.Title</h4>
+                    <a href="/Portfolio/PortfolioDelete/@item.ID" class="btn btn-danger">Sil</a>
+                    <a href="/Portfolio/PortfolioUpdate/@item.ID" class="btn btn-warning">Güncelle</a>
+                </div>
+            </div>
+
+        </div>
+    }
+</div>
+
+<a href="/Portfolio/PortfolioAdd/" class="btn btn-secondary">Yeni Portfolyo Ekle</a>
+
+
+

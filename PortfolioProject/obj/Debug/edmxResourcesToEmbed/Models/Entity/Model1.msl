@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBPortfolioModelStoreContainer" CdmEntityContainer="DBPortfolioEntities">
+    <EntitySetMapping Name="About">
+      <EntityTypeMapping TypeName="DBPortfolioModel.About">
+        <MappingFragment StoreEntitySet="About">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HeadTitle" ColumnName="HeadTitle" />
+          <ScalarProperty Name="BigTitle" ColumnName="BigTitle" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contact">
+      <EntityTypeMapping TypeName="DBPortfolioModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="MessageDate" ColumnName="MessageDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Education">
+      <EntityTypeMapping TypeName="DBPortfolioModel.Education">
+        <MappingFragment StoreEntitySet="Education">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Scholl" ColumnName="Scholl" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="EducationDate" ColumnName="EducationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Portfolio">
+      <EntityTypeMapping TypeName="DBPortfolioModel.Portfolio">
+        <MappingFragment StoreEntitySet="Portfolio">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Service">
+      <EntityTypeMapping TypeName="DBPortfolioModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteSettings">
+      <EntityTypeMapping TypeName="DBPortfolioModel.SiteSettings">
+        <MappingFragment StoreEntitySet="SiteSettings">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="FacebookLink" ColumnName="FacebookLink" />
+          <ScalarProperty Name="InstagramLink" ColumnName="InstagramLink" />
+          <ScalarProperty Name="LinkedinLink" ColumnName="LinkedinLink" />
+          <ScalarProperty Name="TwitterLink" ColumnName="TwitterLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skill">
+      <EntityTypeMapping TypeName="DBPortfolioModel.Skill">
+        <MappingFragment StoreEntitySet="Skill">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Percent" ColumnName="Percent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Slider">
+      <EntityTypeMapping TypeName="DBPortfolioModel.Slider">
+        <MappingFragment StoreEntitySet="Slider">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Job1" ColumnName="Job1" />
+          <ScalarProperty Name="Job2" ColumnName="Job2" />
+          <ScalarProperty Name="Job3" ColumnName="Job3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkingLife">
+      <EntityTypeMapping TypeName="DBPortfolioModel.WorkingLife">
+        <MappingFragment StoreEntitySet="WorkingLife">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="WorkingDate" ColumnName="WorkingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

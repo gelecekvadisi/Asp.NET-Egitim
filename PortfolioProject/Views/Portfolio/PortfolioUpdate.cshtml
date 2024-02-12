@@ -1,0 +1,41 @@
+﻿
+@model PortfolioProject.Models.Entity.Portfolio
+
+@{
+    ViewBag.Title = "PortfolioUpdate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Hizmet Bilgilerimi Güncelleme</h4>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form method="post">
+                            @Html.HiddenFor(x => x.ID)
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Başlık</label>
+                                @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(x => x.Title, "", new { @style = "color:red" })
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Resim Yolu</label>
+                                @Html.TextBoxFor(x => x.Image, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(x => x.Image, "", new { @style = "color:red" })
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Güncelle</button>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- end row-->
+
+            </div> <!-- end card-body -->
+        </div> <!-- end card -->
+    </div><!-- end col -->
+</div>

@@ -1,0 +1,44 @@
+﻿
+@model PortfolioProject.Models.Entity.About
+
+@{
+    ViewBag.Title = "AboutUpdate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Hakkımda Bilgilerimi Güncelleme</h4>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form method="post">
+                            @Html.HiddenFor(x => x.ID)
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Ana Başlık</label>
+                                @Html.TextBoxFor(x => x.HeadTitle, new { @class = "form-control" })
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">Orta Başlık</label>
+                                @Html.TextBoxFor(x => x.BigTitle, new { @class = "form-control" })
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="simpleinput" class="form-label">İçerik</label>
+                                @Html.TextAreaFor(x => x.Content, 10, 1, new { @class = "form-control" })
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Güncelle</button>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- end row-->
+
+            </div> <!-- end card-body -->
+        </div> <!-- end card -->
+    </div><!-- end col -->
+</div>

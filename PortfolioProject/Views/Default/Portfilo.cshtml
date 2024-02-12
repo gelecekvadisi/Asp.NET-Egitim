@@ -1,0 +1,35 @@
+﻿
+@using PortfolioProject.Models.Entity
+@model List<Portfolio>
+
+<div class="aali_tm_section help" id="portfolio">
+    <div class="aali_tm_portfolio wow fadeInUp" data-wow-duration="1s">
+        <div class="container">
+            <div class="aali_tm_main_title" data-text-align="center" data-color="light">
+                <span>Göz Atınız</span>
+                <h3>Portfolyom</h3>
+            </div>
+            <div class="portfolio_list">
+                <ul class="gallery_zoom">
+
+                    @foreach (var item in Model)
+                    {
+                        <li class="vimeo">
+                            <div class="list_inner">
+                                <div class="image">
+                                    <img src="~/portfolio/html/img/thumbs/1-1.jpg" alt="" />
+                                    <div class="main" data-img-url="@item.Image"></div>
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="details">
+                                    <h3>@item.Title</h3>
+                                </div>
+                            </div>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿
+@using PortfolioProject.Models.Entity
+@model List<SiteSettings>
+
+<div class="aali_tm_section">
+    <div class="aali_tm_copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <div class="top">
+                    <div class="logo">
+                        <img src="~/portfolio/html/img/logo/logo.png" alt="" />
+                    </div>
+                    <div class="social">
+                        <span>Sosyal Medya</span>
+                        <ul>
+                            @foreach (var item in Model)
+                            {
+                                <li><a href="@item.FacebookLink"><i class="icon-facebook-1"></i></a></li>
+                                <li><a href="@item.TwitterLink"><i class="icon-twitter-1"></i></a></li>
+                                <li><a href="@item.InstagramLink"><i class="icon-instagram-3"></i></a></li>
+                                <li><a href="@item.LinkedinLink"><i class="icon-linkedin-3"></i></a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <p>Tasarım ve Geliştirme <a class="line_anim" href="#" target="_blank">Emir Gözcü</a> &copy; @DateTime.Now.Year</p>
+                    </div>
+                </div>
+                <span class="border moving_effect" data-direction="y" data-reverse="yes"></span>
+            </div>
+        </div>
+        <span class="square moving_effect" data-direction="x">
+            <a class="totop" href="#">
+                <img class="svg one" src="~/portfolio/html/img/svg/arrow-top.svg" alt="" />
+                <img class="svg two" src="~/portfolio/html/img/svg/arrow-top.svg" alt="" />
+            </a>
+        </span>
+    </div>
+</div>

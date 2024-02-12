@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+html {
+	overflow-x: hidden;
+	padding: 0px;
+	margin: 0px
+}
+body{
+	overflow-x: hidden;
+	width: 100%;
+	font-family: "Mulish";
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0px;
+	word-wrap: break-word;
+	font-weight: 400;
+	background-color: #f4f5fe;
+	color: #7d7789;
+}
+h1,h2,h3,h4,h5,h6{color: #333;}
+svg{
+	fill: currentcolor;
+	width: 15px;
+	height: 15px;
+}
+img.svg{
+	width: 15px;
+	height: 15px;
+}
+
+.aali_tm_documentation,
+.aali_tm_documentation *{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aali_tm_documentation{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	position: relative;
+}
+.aali_tm_documentation .copyright{
+	position: absolute;
+	z-index: 1;
+	bottom: 20px;
+	right: 20px;
+}
+.aali_tm_documentation .copyright p{
+	color: #fff;
+	font-size: 13px;
+	opacity: .5;
+}
+.aali_tm_documentation .copyright a{
+	text-decoration: none;
+	color: #fff;
+}
+.aali_tm_documentation .sidebar{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100vh;
+	width: 300px;
+	background-color: #333;
+	z-index: 5;
+}
+.aali_tm_documentation .sidebar .sidebar_inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.aali_tm_documentation .sidebar .links{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0px 20px;
+}
+.aali_tm_documentation .sidebar .links ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aali_tm_documentation .sidebar .links ul li{
+	margin: 0px;
+	float: left;
+	width: 100%;
+	text-align: right;
+	position: relative;
+}
+.aali_tm_documentation .sidebar .links ul li a{
+	text-decoration: none;
+	color: #ddd;
+	font-size: 15px;
+	display: block;
+	padding: 3px 0px;
+	font-family: "Poppins";
+	font-weight: 500;
+	transition: all .3s ease;
+}
+.aali_tm_documentation .sidebar .links ul li.current a{
+	color: #dd1c63;
+}
+.aali_tm_documentation .sidebar .links ul li:hover a{
+	color: #dd1c63;
+}
+.aali_tm_documentation .sidebar .links ul li:before{
+	position: absolute;
+	content: "";
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 1px;
+	background-color: rgba(255,255,255,.05);
+}
+.aali_tm_documentation .content{
+	position: relative;
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 150px 50px 50px 350px;
+}
+.aali_tm_documentation .section{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 200px;
+}
+.aali_tm_documentation .intro{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.aali_tm_documentation .intro .item_name{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	padding-bottom: 10px;
+}
+.aali_tm_documentation .intro .item_name h3{
+	font-size: 35px;
+}
+.aali_tm_documentation .intro_list{
+	width: 100%;
+	float: left;
+	padding-top: 20px;
+}
+.aali_tm_documentation .intro_list{
+	width: 100%;
+	float: left;
+}
+.aali_tm_documentation .intro_list li{
+	margin: 0px;
+	list-style-type: none;
+}
+.aali_tm_documentation .intro_list li a{
+	color: #7d7789;
+}
+.aali_tm_documentation .main_title{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: #333;
+	border-radius: 5px;
+	padding: 10px 50px;
+	margin-bottom: 30px;
+}
+.aali_tm_documentation .main_title h3{
+	color: #fff;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.aali_tm_documentation .inner_list{
+	width: 100%;
+	float: left;
+	padding-left: 20px;
+}
+.aali_tm_documentation .inner_list{
+	margin: 0px;
+}
+.aali_tm_documentation .text{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.aali_tm_documentation .inner_image{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.aali_tm_documentation .tutorial_list{
+	width: 100%;
+	float: left;
+}
+.aali_tm_documentation .tutorial_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aali_tm_documentation .tutorial_list ul li{
+	margin: 0px 0px 70px 0px;
+	width: 100%;
+	float: left;
+}
+.aali_tm_documentation .tutorial_list ul li:last-child{margin-bottom: 0px;}
+.aali_tm_documentation .tutorial_list .tutorial_title{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+.aali_tm_documentation .tutorial_list .tutorial_title h3{
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.aali_tm_documentation .contact_list{
+	width: 100%;
+	float: left;
+}
+.aali_tm_documentation .contact_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aali_tm_documentation .contact_list ul li{
+	margin: 0px;
+}
+.aali_tm_documentation .contact_list ul li span{
+	font-weight: 800;
+	min-width: 95px;
+	display: inline-block;
+}
+.aali_tm_documentation .contact_list ul li a{
+	text-decoration: none;
+	color: #7d7789;
+	transition: all .3s ease;
+}
+.aali_tm_documentation .contact_list ul li a:hover{
+	color: #dd1c63;
+}
+
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body{
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+}
+body:-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
